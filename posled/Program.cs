@@ -14,11 +14,8 @@ namespace posled
             int finishNumber = 96;
             int step = 7;
 
-            while (basicNumber <= finishNumber)
-            {
-                Console.Write(basicNumber + " ");
-                basicNumber += step;
-            } 
+            for (int i = basicNumber; i <= finishNumber; i+=step)
+                Console.Write(i + " ");
 
             Console.ReadKey();
         }
